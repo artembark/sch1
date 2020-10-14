@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blue[700],
         body: SafeArea(
           child: Center(
-            //чтобы отцентровать для веба, на мобильной версии центруется
+            //чтобы отцентровать для веба
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               CircleAvatar(
@@ -71,9 +71,9 @@ class MyApp extends StatelessWidget {
               ),
               Container(
                 constraints: BoxConstraints(
-                    minWidth: 100,
-                    maxWidth:
-                        600), //этот контейнер и constraint для веба, чтобы строка не была слишком длинной
+                  minWidth: 100,
+                  maxWidth: 600,
+                ), //этот контейнер и constraint для веба, чтобы строка не была слишком длинной
                 child: Card(
                   color: Colors.white,
                   margin:
